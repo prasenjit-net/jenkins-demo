@@ -5,6 +5,11 @@ pipeline {
             steps {
                 echo 'Hi'
             }
+            post {
+                always {
+                    echo 'success'
+                }
+            }
         }
     }
 }
