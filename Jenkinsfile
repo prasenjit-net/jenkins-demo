@@ -16,8 +16,10 @@ pipeline {
             }
         }
         stage('cred check'){
-            echo "CC = ${CC}"
-            echo "PK = ${PK}"
+            steps{
+                echo "CC = ${CC}"
+                echo "PK = ${PK}"
+            }
         }
     }
 }
