@@ -19,6 +19,7 @@ pipeline {
             steps{
                 echo "CC = ${CC}"
                 echo "PK = ${PK}"
+                sh 'env'
             }
         }
     }
