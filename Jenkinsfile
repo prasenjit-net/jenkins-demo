@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         CC = 'CC_VALUE'
-        PK = credential('ubuntu_wso2')
+        PK = credentials('ubuntu_wso2')
     }
     stages {
         stage('build'){
